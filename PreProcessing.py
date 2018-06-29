@@ -124,6 +124,7 @@ print('Pixel width and height were', columnWidth)
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #@@TODO convert into functions and call them instaed of the sequential code here :/
 #Using search and not match coz pytesseract :(
+#FAILS MISERABLY :(
 '''
 matchObjectColumnOne = re.match(r'/[IiL1fl\'\"\(\)]{1,4}/i', text)
     matchObjectColumnTwo = re.match(r'/a?V\s*[123\'\"]*/i', text)
@@ -166,11 +167,7 @@ if (len(BLOCK_X) != len(BLOCK_Y)):
 else:
     for i in range(1, len(BLOCK_X)):
         block = textRecognizeImage[BLOCK_X[i-1]: BLOCK_X[i], BLOCK_Y[i-1]: BLOCK_Y[i]]
-        ##SIGNAL DIGITIZATION: ladies and gentlemen, the moment we were waiting for so earnestly
-        #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        #@@TODO: Adapt this into a function
-        #Scanning each pixel by pixel so it will quite slow. Cannot help it here.
-        
+        pass #Doesn't work :/
 
 
 
